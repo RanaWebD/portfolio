@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://RanaWebD.github.io/portfolio",
+  "homepage": "https://ranawebd.github.io/portfolio",
   "dependencies": {
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
