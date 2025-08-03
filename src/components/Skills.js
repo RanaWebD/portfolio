@@ -1,41 +1,52 @@
 import React from 'react';
 import { 
   FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs,
-  FaPython, FaGitAlt, FaFigma, FaSass
+  FaGitAlt, FaFigma, FaCode, FaDatabase, FaTools
 } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiPostgresql, SiFirebase, SiTailwindcss, SiVite } from 'react-icons/si';
+import { SiTypescript, SiMongodb, SiFirebase, SiTailwindcss, SiExpress, SiPostman } from 'react-icons/si';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Frontend',
+      icon: <FaCode className="w-6 h-6" />,
       skills: [
-        { name: 'React', icon: <FaReact className="w-6 h-6" />, level: 80 },
-        { name: 'JavaScript', icon: <FaJs className="w-6 h-6" />, level: 75 },
-        { name: 'TypeScript', icon: <SiTypescript className="w-6 h-6" />, level: 65 },
-        { name: 'HTML5', icon: <FaHtml5 className="w-6 h-6" />, level: 90 },
-        { name: 'CSS3', icon: <FaCss3Alt className="w-6 h-6" />, level: 85 },
-        { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-6 h-6" />, level: 70 },
-        { name: 'Sass', icon: <FaSass className="w-6 h-6" />, level: 60 },
+        'React.js',
+        'JavaScript (ES6+)',
+        'HTML5, CSS3',
+        'Responsive Design'
       ]
     },
     {
-      title: 'Backend Development',
+      title: 'Backend & APIs',
+      icon: <FaDatabase className="w-6 h-6" />,
       skills: [
-        { name: 'Node.js', icon: <FaNodeJs className="w-6 h-6" />, level: 60 },
-        { name: 'Python', icon: <FaPython className="w-6 h-6" />, level: 50 },
-        { name: 'MongoDB', icon: <SiMongodb className="w-6 h-6" />, level: 60 },
-        { name: 'PostgreSQL', icon: <SiPostgresql className="w-6 h-6" />, level: 40 },
-        { name: 'Firebase', icon: <SiFirebase className="w-6 h-6" />, level: 45 },
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'RESTful APIs'
       ]
     },
     {
-      title: 'Tools & Technologies',
+      title: 'Tools & Workflow',
+      icon: <FaTools className="w-6 h-6" />,
       skills: [
-        { name: 'Git', icon: <FaGitAlt className="w-6 h-6" />, level: 80 },
-        { name: 'Vite', icon: <SiVite className="w-6 h-6" />, level: 70 },
-        { name: 'Figma', icon: <FaFigma className="w-6 h-6" />, level: 60 },
+        'Git & GitHub',
+        'VS Code',
+        'Postman',
+        'Figma (Basic)'
       ]
+    },
+    {
+      title: 'Currently Learning',
+      icon: <FaCode className="w-6 h-6" />,
+      skills: [
+        'TypeScript',
+        'Tailwind CSS',
+        'Firebase',
+        'GitHub Actions'
+      ],
+      isLearning: true
     }
   ];
 
@@ -52,45 +63,33 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="card p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">
-                {category.title}
-              </h3>
+              <div className="flex items-center mb-6">
+                <div className="text-blue-600 mr-3">
+                  {category.icon}
+                </div>
+                <h3 className={`text-2xl font-semibold ${
+                  category.isLearning 
+                    ? 'text-green-600 dark:text-green-400' 
+                    : 'text-gray-900 dark:text-white'
+                }`}>
+                  {category.title}
+                </h3>
+              </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="group">
-                    <div className="card p-6 card-hover">
-                      <div className="flex items-center space-x-4 mb-4">
-                        <div className="text-blue-600 group-hover:scale-110 transition-transform duration-200">
-                          {skill.icon}
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-gray-900 dark:text-white">
-                            {skill.name}
-                          </h4>
-                        </div>
-                      </div>
-                      
-                      {/* Progress Bar */}
-                      <div className="w-full bg-gray-200 dark:bg-dark-600 rounded-full h-2 mb-2">
-                        <div 
-                          className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
-                      
-                      <div className="flex justify-between items-center">
-                        <span className="text-xs text-gray-500 dark:text-gray-400">
-                          Proficiency
-                        </span>
-                        <span className="text-sm font-medium text-blue-600">
-                          {skill.level}%
-                        </span>
-                      </div>
-                    </div>
+                  <div key={skillIndex} className="flex items-center">
+                    <div className={`w-2 h-2 rounded-full mr-3 ${
+                      category.isLearning 
+                        ? 'bg-green-500' 
+                        : 'bg-blue-500'
+                    }`}></div>
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">
+                      {skill}
+                    </span>
                   </div>
                 ))}
               </div>

@@ -50,12 +50,24 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-white dark:bg-dark-900">
       <div className="container-max">
+        {/* Photo at top */}
+        <div className="flex justify-center mb-12">
+          <div className="relative">
+            <img 
+              src="/profile-photo.JPG" 
+              alt="Himanshu Rana"
+              className="w-64 h-64 rounded-full object-cover shadow-lg"
+            />
+            <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-blue-600 rounded-full opacity-20"></div>
+          </div>
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="section-title">
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="section-subtitle">
-            Web developer in progress, focused on React and TypeScript. Currently interning at JobSearch.works and building clean, user-friendly websites.
+            React and TypeScript developer passionate about building interactive and accessible web applications.
           </p>
         </div>
 
@@ -79,13 +91,16 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  I'm Himanshu Rana, a self-motivated web developer based in Australia. After completing my BCA and a diploma in hardware and networking, I took a long break from the tech industry. But my passion for technology never faded.
+                  I'm a React and TypeScript developer passionate about building interactive and accessible web applications.
                 </p>
                 <p>
-                  In 2025, I decided to fully restart my career — learning modern web development from scratch, practicing daily, and working on real projects. I'm currently interning at JobSearch.works, where I'm gaining hands-on experience with React, TypeScript, and real-world team workflows.
+                  Currently, I'm working as a Web Development Intern at <strong>JobSearch.works</strong>, where I collaborate on real-world projects, improve UI components, and follow professional workflows using Git and Agile practices.
                 </p>
                 <p>
-                  My goal is to become a junior developer and keep growing by building clean, human-centered digital products. Outside of coding, I love capturing life in Australia and sharing it through creative content.
+                  Before this, I took time to relocate to Australia and focus deeply on self-learning. I built full-stack projects using React, Node.js, and MongoDB, completed hands-on courses (like freeCodeCamp and Scrimba), and improved my frontend fundamentals and English communication skills.
+                </p>
+                <p>
+                  I hold a Bachelor of Computer Applications degree and I'm now actively looking for junior developer opportunities where I can grow, contribute to a team, and continue learning every day.
                 </p>
               </div>
             </div>
