@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://ranawebd.github.io/portfolio",
+  "homepage": "https://www.himanshurana.com",
   "dependencies": {
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
