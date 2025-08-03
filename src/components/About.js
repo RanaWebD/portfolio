@@ -3,9 +3,9 @@ import { FaGraduationCap, FaBriefcase, FaUser, FaCode } from 'react-icons/fa';
 
 const About = () => {
   const stats = [
-    { label: 'Years Experience', value: '1' },
+    { label: 'Year Experience', value: '1' },
     { label: 'Projects Completed', value: '2' },
-    { label: 'Happy Clients', value: '1' },
+    { label: 'Happy Client', value: '1' },
     { label: 'Technologies', value: '10+' },
   ];
 

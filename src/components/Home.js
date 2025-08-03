@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowDown, FaDownload } from 'react-icons/fa';
 
 const Home = () => {
   const scrollToAbout = () => {
@@ -22,12 +22,12 @@ const Home = () => {
               Himanshu Rana.
             </h1>
             <h2 className="text-4xl md:text-6xl font-bold text-gray-600 dark:text-gray-300 mb-8">
-            I build user-friendly web applications.
+              React & TypeScript Developer Based in Australia.
             </h2>
           </div>
           
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          I'm a frontend developer with a passion for clean, responsive design and accessible digital experiences. Currently, I'm interning at JobSearch.works, where I contribute to real-world features using React and TypeScript. I'm actively seeking entry-level opportunities to grow and build impactful web products.
+            I build modern, user-focused web applications with clean UI and scalable code.
           </p>
 
           {/* CTA Buttons */}
