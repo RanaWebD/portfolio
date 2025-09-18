@@ -3,7 +3,7 @@ import { FaGraduationCap, FaBriefcase, FaUser, FaCode } from 'react-icons/fa';
 
 const About = () => {
   const stats = [
-    { label: 'Year Experience', value: '1' },
+    { label: 'Year Experience', value: '2' },
     { label: 'Projects Completed', value: '2' },
     { label: 'Happy Client', value: '1' },
     { label: 'Technologies', value: '10+' },
@@ -53,8 +53,8 @@ const About = () => {
         {/* Photo at top */}
         <div className="flex justify-center mb-12">
           <div className="relative">
-            <img 
-              src="/profile-photo.JPG" 
+            <img
+              src="/profile-photo.JPG"
               alt="Himanshu Rana"
               className="w-64 h-64 rounded-full object-cover shadow-lg"
             />
@@ -67,7 +67,8 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="section-subtitle">
-            React and TypeScript developer passionate about building interactive and accessible web applications.
+            I’m a Frontend Developer specializing in React and TypeScript, passionate about building interactive, accessible, and high-performance web applications. Currently, I’m contributing to real-world projects at JobSearch.Works in Melbourne, where I’ve helped improve user experience, fix critical frontend bugs, and collaborate in Agile sprints. <br />
+            With 2 completed projects, experience across 10+ modern technologies, and a track record of delivering results for a satisfied client, I bring both hands-on coding ability and problem-solving skills. My focus is on writing clean, maintainable code and creating applications that users enjoy.
           </p>
         </div>
 
@@ -91,16 +92,15 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  I'm a React and TypeScript developer passionate about building interactive and accessible web applications.
+                  I’m a <strong>React and TypeScript developer</strong> passionate about building interactive, accessible, and high-performance web applications.</p>
+                <p>
+                  Currently, I contribute as a <strong>Web Development Intern at JobSearch.Works</strong>, collaborating on real-world projects, enhancing UI components, fixing frontend issues, and working within Agile workflows using Git and professional development practices.
                 </p>
                 <p>
-                  Currently, I'm working as a Web Development Intern at <strong>JobSearch.works</strong>, where I collaborate on real-world projects, improve UI components, and follow professional workflows using Git and Agile practices.
+                  Previously, I took time to relocate to Australia and focus on self-learning. During this period, I built full-stack projects with <strong>React, Node.js, and MongoDB</strong>, completed hands-on courses such as freeCodeCamp and Scrimba, and strengthened both my frontend fundamentals and English communication skills.
                 </p>
                 <p>
-                  Before this, I took time to relocate to Australia and focus deeply on self-learning. I built full-stack projects using React, Node.js, and MongoDB, completed hands-on courses (like freeCodeCamp and Scrimba), and improved my frontend fundamentals and English communication skills.
-                </p>
-                <p>
-                  I hold a Bachelor of Computer Applications degree and I'm now actively looking for junior developer opportunities where I can grow, contribute to a team, and continue learning every day.
+                  I hold a <strong>Bachelor of Computer Applications (BCA)</strong> degree and am now seeking junior developer opportunities where I can apply my skills, grow with a team, and continue learning every day.
                 </p>
               </div>
             </div>

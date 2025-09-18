@@ -22,12 +22,12 @@ const Home = () => {
               Himanshu Rana.
             </h1>
             <h2 className="text-4xl md:text-6xl font-bold text-gray-600 dark:text-gray-300 mb-8">
-              React & TypeScript Developer Based in Australia.
+              I build fast, modern, and scalable web apps using React & TypeScript — helping businesses deliver better user experiences.
             </h2>
           </div>
           
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-            I build modern, user-focused web applications with clean UI and scalable code.
+            Frontend Developer passionate about modern web solutions — currently building real-world React & TypeScript apps at JobSearch.Works in Melbourne.
           </p>
 
           {/* CTA Buttons */}

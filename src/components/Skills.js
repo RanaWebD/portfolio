@@ -1,9 +1,7 @@
 import React from 'react';
 import { 
-  FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs,
-  FaGitAlt, FaFigma, FaCode, FaDatabase, FaTools
+  FaCode, FaDatabase, FaTools
 } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiFirebase, SiTailwindcss, SiExpress, SiPostman } from 'react-icons/si';
 
 const Skills = () => {
   const skillCategories = [
@@ -106,7 +104,7 @@ const Skills = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                'RESTful APIs', 'Redux', 'Next.js', 
+                'Redux', 'Next.js', 
                 'Express.js', 'CI/CD',
                 'Responsive Design', 'Progressive Web Apps', 'SEO', 'Performance Optimization'
               ].map((skill, index) => (
